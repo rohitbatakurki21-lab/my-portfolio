@@ -1,74 +1,326 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f0f4f8;
-            text-align: center;
-        }
-        header {
-            background: #172554;
-            color: white;
-            padding: 35px 15px;
-        }
-        section {
-            background: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 12px;
-        }
-        h2 { color: #1d4ed8; }
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-        footer {
-            background: #172554;
-            color: white;
-            padding: 15px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit | My Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: #0f172a;
+    padding: 18px 5px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Home */
+header {
+    background: linear-gradient(135deg, #2563eb, #0f172a);
+    color: white;
+    text-align: center;
+    padding: 75px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* Sections */
+section {
+    background: white;
+    max-width: 850px;
+    width: 92%;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+    scroll-margin-top: 75px;
+}
+
+h2 {
+    color: #2563eb;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+h3 {
+    margin-top: 18px;
+    color: #0f172a;
+}
+
+/* Biodata */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px 5px;
+    border-bottom: 1px solid #e2e8f0;
+    overflow-wrap: anywhere;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 35%;
+}
+
+/* Resume */
+ul {
+    padding-left: 25px;
+}
+
+/* Contact */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 13px;
+    }
+
+    header {
+        padding: 50px 12px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<header>
+<!-- Navigation -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#biodata">Biodata</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Home Page -->
+<header id="home">
     <h1>Rohit T Batakurki</h1>
     <p>Computer Science Engineering Student</p>
-    <p>Welcome to My Portfolio</p>
+    <p>Welcome to my personal portfolio!</p>
+    <a class="btn" href="#biodata">About Me</a>
+    <a class="btn" href="#resume">View Resume</a>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>I am a Computer Science Engineering student
-    interested in programming and web development.</p>
+<!-- Biodata Page -->
+<section id="biodata">
+    <h2>My Biodata</h2>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Rohit T Batakurki</td>
+        </tr>
+        <tr>
+            <td>Course</td>
+            <td>Bachelor of Engineering (B.E.)</td>
+        </tr>
+        <tr>
+            <td>Branch</td>
+            <td>Computer Science Engineering</td>
+        </tr>
+        <tr>
+            <td>College</td>
+            <td>R V Institute of Technology and Management</td>
+        </tr>
+        <tr>
+            <td>Technical Skills</td>
+            <td>HTML, CSS, JavaScript, Python, Java</td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>Coding, Learning Technology</td>
+        </tr>
+    </table>
 </section>
 
-<section>
-    <h2>My Skills</h2>
-    <p>HTML | CSS | JavaScript | Python | Java</p>
+<!-- Resume Page -->
+<section id="resume">
+    <h2>My Resume</h2>
+
+    <h3>Career Objective</h3>
+    <p>
+        To build a successful career in the technology field,
+        improve my programming skills, and contribute to
+        innovative software projects.
+    </p>
+
+    <h3>Education</h3>
+    <p><b>Bachelor of Engineering</b></p>
+    <p>Computer Science Engineering</p>
+    <p>R V Institute of Technology and Management</p>
+
+    <h3>Technical Skills</h3>
+    <ul>
+        <li>HTML and CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <ul>
+        <li>Automatic Timetable Generator</li>
+        <li>Personal Portfolio Website</li>
+    </ul>
+
+    <h3>Strengths</h3>
+    <ul>
+        <li>Problem-solving</li>
+        <li>Quick learning</li>
+        <li>Teamwork</li>
+    </ul>
+
+    <a class="btn" href="resume.pdf" target="_blank">
+        Download / View Resume PDF
+    </a>
+    <p>
+        Upload your actual resume as resume.pdf
+        to the same GitHub repository for this link to work.
+    </p>
 </section>
 
-<section>
-    <h2>My Projects</h2>
-    <p>Automatic Timetable Generator</p>
-    <p>Personal Portfolio Website</p>
-</section>
-
-<section>
+<!-- Contact Page -->
+<section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: <a href="https://github.com/">My GitHub</a></p>
+    <p>Feel free to contact me about projects and opportunities.</p>
+
+    <form id="contactForm">
+        <input type="text" id="name"
+               placeholder="Enter your name" required>
+
+        <input type="email" id="email"
+               placeholder="Enter your email" required>
+
+        <textarea id="message" rows="5"
+                  placeholder="Enter your message" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+
+    <p id="status"></p>
 </section>
 
+<!-- Footer -->
 <footer>
     <p>© 2026 Rohit T Batakurki</p>
+    <p>Personal Portfolio Website</p>
 </footer>
-    <script src="script.js"></script>
+
+<script>
+document.getElementById("contactForm")
+.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+        document.getElementById("status").textContent =
+            "Please fill in all fields.";
+        return;
+    }
+
+    document.getElementById("status").textContent =
+        "Thank you, " + name +
+        "! The form is validated, but a messaging service is needed to send your message.";
+
+    // To enable actual email sending, connect a backend
+    // or a form service.
+});
+</script>
 
 </body>
 </html>
