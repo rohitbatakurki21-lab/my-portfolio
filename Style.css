@@ -19,47 +19,46 @@ nav {
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 100;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px;
+    margin: 8px;
     font-size: 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
     color: #38bdf8;
 }
 
-/* Home */
+/* Header */
 header {
     background: linear-gradient(135deg, #2563eb, #0f172a);
     color: white;
     text-align: center;
-    padding: 70px 15px;
+    padding: 60px 15px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 18px;
-    margin-bottom: 15px;
+    margin: 8px 0;
 }
 
-/* Sections */
+/* Content sections */
 section {
     background: white;
-    max-width: 850px;
     width: 92%;
+    max-width: 850px;
     margin: 25px auto;
-    padding: 30px;
+    padding: 28px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px #00000015;
+    box-shadow: 0 4px 12px #00000012;
 }
 
 h2 {
@@ -70,10 +69,14 @@ h2 {
 
 h3 {
     color: #0f172a;
-    margin-top: 18px;
+    margin: 15px 0 8px;
 }
 
-/* Bio Data */
+p {
+    margin-bottom: 10px;
+}
+
+/* Biodata table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -82,44 +85,55 @@ table {
 td {
     padding: 12px 6px;
     border-bottom: 1px solid #e2e8f0;
+    overflow-wrap: anywhere;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
 }
 
 /* Buttons */
-.btn {
+.btn, button {
     display: inline-block;
     background: #2563eb;
     color: white;
     padding: 12px 20px;
-    margin: 10px 5px;
+    margin-top: 12px;
+    border: none;
     border-radius: 6px;
     text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
 }
 
-.btn:hover {
+.btn:hover, button:hover {
     background: #1d4ed8;
 }
 
-/* Contact Form */
+/* Contact form */
 input, textarea {
+    display: block;
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
-button {
-    background: #2563eb;
-    color: white;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+textarea {
+    resize: vertical;
 }
 
-button:hover {
-    background: #1d4ed8;
+/* Links */
+section a {
+    color: #2563eb;
 }
 
 /* Footer */
@@ -128,22 +142,27 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
 }
 
-/* Mobile Responsive */
+/* Mobile design */
 @media (max-width: 600px) {
+    nav {
+        padding: 12px 4px;
+    }
+
     nav a {
         display: inline-block;
         margin: 5px;
         font-size: 13px;
     }
 
-    header h1 {
-        font-size: 28px;
+    header {
+        padding: 45px 12px;
     }
 
-    header {
-        padding: 50px 12px;
+    header h1 {
+        font-size: 28px;
     }
 
     section {
