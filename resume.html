@@ -1,64 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Rohit - Resume</title>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Rohit Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="biodata.html">Biodata</a>
-    <a href="resume.html">Resume</a>
+    <a href="biodata.html">Bio Data</a>
+    <a href="resume.html" class="active">Resume</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <header>
     <h1>My Resume</h1>
     <p>Rohit T Batakurki</p>
-    <p>USN: 1RF24CS129</p>
+    <p>Computer Science and Engineering</p>
 </header>
 
-<section>
-    <h2>Career Objective</h2>
-    <p>
-        To improve my technical skills and build a career
-        in software development and information technology.
-    </p>
+<div class="container">
+    <section class="card">
+        <h2>Career Objective</h2>
+        <p>To develop my technical knowledge and programming
+        skills while contributing to meaningful software projects
+        and gaining professional experience.</p>
+    </section>
 
-    <h2>Education</h2>
-    <h3>Bachelor of Engineering</h3>
-    <p>Computer Science and Engineering</p>
-    <p>R V Institute of Technology and Management</p>
+    <section class="card">
+        <h2>Education</h2>
+        <table>
+            <tr><th>Qualification</th><th>Institution</th></tr>
+            <tr>
+                <td>B.E. - Computer Science and Engineering</td>
+                <td>R V Institute of Technology and Management</td>
+            </tr>
+        </table>
+    </section>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>HTML and CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>SQL</li>
-    </ul>
+    <section class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML and CSS</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+        </ul>
+    </section>
 
-    <h2>Projects</h2>
-    <h3>Automatic Timetable Generator</h3>
-    <p>A college timetable generation system using Python.</p>
+    <section class="card">
+        <h2>Academic Projects</h2>
+        <h3>Automatic Timetable Generator</h3>
+        <p>A web application concept using Python, Flask, and
+        SQLite to generate timetables while avoiding teacher
+        scheduling conflicts.</p>
 
-    <h3>Personal Portfolio</h3>
-    <p>A website showcasing my profile and skills.</p>
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive website created using HTML and CSS
+        to present my profile, bio data, and resume.</p>
+    </section>
 
-    <h2>Strengths</h2>
-    <ul>
-        <li>Quick learner</li>
-        <li>Problem-solving</li>
-        <li>Teamwork</li>
-    </ul>
-</section>
+    <section class="card">
+        <h2>Strengths</h2>
+        <ul>
+            <li>Willingness to learn</li>
+            <li>Problem-solving skills</li>
+            <li>Teamwork</li>
+        </ul>
+    </section>
+</div>
 
 <footer>
-    <p>© 2026 Rohit T Batakurki</p>
+    <p>&copy; 2026 Rohit T Batakurki | My Portfolio</p>
 </footer>
 
 </body>
