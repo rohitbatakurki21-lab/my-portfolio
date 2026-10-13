@@ -1,0 +1,44 @@
+// Welcome message
+function welcome() {
+    alert("Welcome to Rohit's Portfolio!");
+}
+
+// Smooth navigation
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function() {
+        console.log("Section opened: " + this.textContent);
+    });
+});
+
+// Contact form validation
+const form = document.querySelector("form");
+
+if (form) {
+    form.addEventListener("submit", function(event) {
+        const name = form.querySelector(
+            '[name="Name"]'
+        ).value.trim();
+
+        const email = form.querySelector(
+            '[name="Email"]'
+        ).value.trim();
+
+        const message = form.querySelector(
+            '[name="Message"]'
+        ).value.trim();
+
+        if (!name || !email || !message) {
+            event.preventDefault();
+            alert("Please fill in all fields.");
+        }
+    });
+}
+
+// Current year in footer
+const footer = document.querySelector("footer p");
+
+if (footer) {
+    footer.textContent =
+        "© " + new Date().getFullYear() +
+        " Rohit T Batakurki | My Portfolio";
+}
